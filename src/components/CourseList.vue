@@ -7,7 +7,7 @@
                     <h5 class="card-title">{{ course.name }}</h5>
                     <p class="card-text"> {{ course.category }}</p>
                     <p class="card-text"> {{ course.price }}$</p>
-                    
+                    <RouterLink :to="'/' + course.id " class="btn btn-primary">Course Detail</RouterLink>
                 </div>
             </div>
         </div>
