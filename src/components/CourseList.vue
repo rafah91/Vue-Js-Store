@@ -1,21 +1,30 @@
 <template>
     <div class="row my-5">
-        <div class="col-lg-3" v-for="course in courses">
-            <div class="card">
-                <img :src="course.image" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">{{ course.name }}</h5>
-                    <p class="card-text"> {{ course.category }}</p>
-                    <p class="card-text"> {{ course.price }}$</p>
-                    <RouterLink :to="'/' + course.id " class="btn btn-primary">Course Detail</RouterLink>
-                </div>
-            </div>
+        <div class="col-lg-4" v-for="course in courses">
+            <Card style="overflow: hidden">
+                <template #header>
+                    <img alt="user header" :src="course.image" />
+                </template>
+                <template #title>{{ course.name }}</template>
+                <template #subtitle>{{ course.category }}</template>
+                <template #content>
+                    <p class="m-0">
+                        {{ course.price }}$
+                    </p>
+                </template>
+                <template #footer>
+                    <div class="flex gap-3 mt-1">
+                        <Button label="Save" class="w-full" />
+                    </div>
+                </template>
+            </Card>
         </div>
     </div>
 
 </template>
 
 <script>
+    import Card from 'primevue/card';
     import { courses } from '../temp-data'
 
     export default {
@@ -27,3 +36,12 @@
         }
     }
 </script>
+
+<style>
+img{
+    height: 200px;
+}
+.p-card{
+    margin-top: 10px;
+}
+</style>
