@@ -27,3 +27,4 @@ npm run dev
 ```sh
 npm run build
 ```
+![image](https://github.com/rafah91/Vue-Js-Store/assets/127397915/03c0da02-5f02-4407-a3c6-95dbb99953e4)
