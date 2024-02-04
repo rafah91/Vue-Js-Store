@@ -7,13 +7,15 @@ export const courses = [
     {
         id:1 , 
         name: 'Python Basics' , 
+        category_id:1,
         category: 'Web Development',
         price: 30 , 
         image: img1
     },
     {
         id:2 , 
-        name: 'AI Basics' , 
+        name: 'AI Basics' ,
+        category_id:2, 
         category: 'AI Development',
         price: 40 , 
         image: img2
@@ -21,6 +23,7 @@ export const courses = [
     {
         id:3 , 
         name: 'Flutter Basics' , 
+        category_id:3,
         category: 'Mobile Development',
         price: 50 , 
         image: img3
@@ -28,6 +31,7 @@ export const courses = [
     {
         id:4 , 
         name: 'Django Basics' , 
+        category_id:1,
         category: 'Web Development',
         price: 60 , 
         image: img4

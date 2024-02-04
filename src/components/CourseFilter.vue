@@ -1,5 +1,6 @@
-<template> 
-    <H2>Course Filter</H2>
+
+<template>
+    <h3> Courses Filter </h3>
     <form class="card ">
 
         <div class="flex align-items-center mycheckbox" v-for="cat in category" :key="cat.id">
@@ -7,8 +8,9 @@
             <label :for="cat.id" class="ml-2"> {{cat.name}} </label>
         </div>
 
-</form>
+    </form>
 </template>
+
 <script>
     export default {
         name: 'CourseFilter',
