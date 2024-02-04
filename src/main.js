@@ -21,6 +21,8 @@ import "primeflex/primeflex.css";
 import Menubar from 'primevue/menubar';
 import Button from 'primevue/button';
 import Card from 'primevue/card';
+import Checkbox from 'primevue/checkbox';
+
 
 app.use(PrimeVue);
 app.use(router)
@@ -28,5 +30,6 @@ app.use(router)
 app.component("Menubar", Menubar);
 app.component("Button", Button);
 app.component("Card", Card);
+app.component("Checkbox", Checkbox);
 
 app.mount('#app')
